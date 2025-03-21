@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Try to get HTML data first
         let pastedData = clipboardData.getData('text/html');
-        debugger
         
         // If no HTML data is available, fall back to plain text
         if (!pastedData || !pastedData.trim()) {
@@ -38,6 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     function processExcelTextData(data) {
+        debugger
+
         // Split the pasted text into rows
         const rows = data.trim().split(/[\r\n]+/);
         
